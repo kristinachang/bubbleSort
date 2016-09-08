@@ -1,0 +1,32 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eee;
+}
+.header h3, h4 {
+	text-align: center;
+}
+.jumbotron {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+.jumbotron .button {
+  padding: 14px 24px;
+  font-size: 16px;
+}
+.jumbotron .row {
+	text-align: left;
+}
+.form-control {
+	text-align: center;
+	padding: 6px 6px;
+	margin-bottom: 15px;
+}
+input[type='button']:disabled, button:disabled {
+  color:#ccc;
+  text-decoration:underline;
+}
+#showSortResults {
+	font-size: 24px;
+}
