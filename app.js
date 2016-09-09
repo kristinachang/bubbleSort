@@ -1,6 +1,7 @@
 // Enable sort button when first 5 numbers entered
 function buttonEnable() {
   //console.log("buttonEnable was called");
+  //can be refactored to be more DRY...
   var num1 = document.getElementById("num1").value;
   var num2 = document.getElementById("num2").value;
   var num3 = document.getElementById("num3").value;
@@ -16,6 +17,7 @@ function buttonEnable() {
   };
 };
 // Grab user input, push into array, bubbleSort the array, and print resulting sorted array
+// Refactor with helper function if time allows...
 function bubbleSort() {
 	var numbersArray =[];
 	var inputElements = document.getElementsByName("inputNumber");
@@ -23,9 +25,9 @@ function bubbleSort() {
 	
 	for (i in inputElements) {
 		var singleNumber = inputElements[i].value;
-		console.log(singleNumber);
+		//console.log(singleNumber);
 		if (singleNumber !== "" && singleNumber !== undefined && singleNumber !== NaN) {
-			numbersArray.push(singleNumber);
+			numbersArray.push(parseFloat(singleNumber));
 			//console.log(numbersArray);
 		}
 	}
@@ -42,11 +44,7 @@ function bubbleSort() {
 		}
 	}
 
-	function sortNumberOrder(a,b) {
-		return a - b;
-	}
-
 	var sortResults = document.getElementById("showSortResults");
-	numbersArray = numbersArray.sort(sortNumberOrder);
 	sortResults.innerHTML = numbersArray
 }
+

@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<!-- For responsiveness -->
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title>Bubble Sort</title>
 	  <!-- Bootstrap core CSS -->
@@ -26,7 +27,7 @@
       <div class="jumbotron">
         <div class="row">
         	<div class="col-sm-1"></div>
-
+					<!-- Chose not to use form here since not going to server. Using .form-control for Bootstrap-->
           <div class="col-sm-1">
             <label for="num1"></label>
             <input type="number" class="form-control" id="num1" name="inputNumber" oninput="buttonEnable();" autofocus="">
@@ -85,6 +86,7 @@
 				<div class="row">
 					<h4>Sort Results:</h4>
 				</div>
+				<!-- Can make this prettier in the future. -->
 				<div id="showSortResults"></div>
 
       </div> <!-- end .jumbotron-->
