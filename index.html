@@ -3,85 +3,86 @@
 
 	<head>
 		<meta charset="UTF-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<!-- For responsiveness -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Bubble Sort</title>
-	  <!-- Bootstrap core CSS -->
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
-    <link type="text/css" rel="stylesheet" href="style.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bubble Sort</title>
+		<!-- Bootstrap core CSS -->
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="/css/master.css" media="screen" title="no title">
 	</head>
 
 	<body>
-	  <div class="container">
-      <div class="header">
-        <div class="top">
-          <h3>Bubble Sort</h3>
-          <h4>Please enter at least 5 numbers below (up to 10 numbers):</h4>
-        </div> <!-- end .top -->
-      </div> <!-- end .header -->
-      
-      <div class="jumbotron">
-        <div class="row">
-        	<div class="col-sm-1"></div>
+		<div class="container">
+			<div class="header">
+				<div class="top">
+					<h3>Bubble Sort</h3>
+					<h4>Please enter at least 5 numbers below (up to 10 numbers):</h4>
+				</div> <!-- end .top -->
+			</div> <!-- end .header -->
+
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-sm-1"></div>
 					<!-- Chose not to use form here since not going to server. Using .form-control for Bootstrap-->
-          <div class="col-sm-1">
-            <label for="num1"></label>
-            <input type="number" class="form-control" id="num1" name="inputNumber" oninput="buttonEnable();" autofocus="">
-          </div>
+					<div class="col-sm-1">
+						<label for="num1"></label>
+						<input type="number" class="form-control" id="num1" name="inputNumber" oninput="buttonEnable();" autofocus="">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num2"></label>
-            <input type="number" class="form-control" id="num2" name="inputNumber" oninput="buttonEnable();">
-          </div>
+					<div class="col-sm-1">
+						<label for="num2"></label>
+						<input type="number" class="form-control" id="num2" name="inputNumber" oninput="buttonEnable();">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num3"></label>
-            <input type="number" class="form-control" id="num3" name="inputNumber" oninput="buttonEnable();">
-          </div>
+					<div class="col-sm-1">
+						<label for="num3"></label>
+						<input type="number" class="form-control" id="num3" name="inputNumber" oninput="buttonEnable();">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num4"></label>
-            <input type="number" class="form-control" id="num4" name="inputNumber" oninput="buttonEnable();">
-          </div>
+					<div class="col-sm-1">
+						<label for="num4"></label>
+						<input type="number" class="form-control" id="num4" name="inputNumber" oninput="buttonEnable();">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num5"></label>
-            <input type="number" class="form-control" id="num5" name="inputNumber" oninput="buttonEnable();">
-          </div>
+					<div class="col-sm-1">
+						<label for="num5"></label>
+						<input type="number" class="form-control" id="num5" name="inputNumber" oninput="buttonEnable();">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num6"></label>
-            <input type="number" class="form-control" id="num6" name="inputNumber">
-          </div>
+					<div class="col-sm-1">
+						<label for="num6"></label>
+						<input type="number" class="form-control" id="num6" name="inputNumber">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num7"></label>
-            <input type="number" class="form-control" id="num7" name="inputNumber">
-          </div>
+					<div class="col-sm-1">
+						<label for="num7"></label>
+						<input type="number" class="form-control" id="num7" name="inputNumber">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num8"></label>
-            <input type="number" class="form-control" id="num8" name="inputNumber">
-          </div>
+					<div class="col-sm-1">
+						<label for="num8"></label>
+						<input type="number" class="form-control" id="num8" name="inputNumber">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num9"></label>
-            <input type="number" class="form-control" id="num9" name="inputNumber">
-          </div>
+					<div class="col-sm-1">
+						<label for="num9"></label>
+						<input type="number" class="form-control" id="num9" name="inputNumber">
+					</div>
 
-          <div class="col-sm-1">
-            <label for="num10"></label>
-            <input type="number" class="form-control" id="num10" name="inputNumber">
-          </div>
-        </div> <!-- end .row -->
-       	<br><br>
-    		<div>
-        	<button class="button" type="button" id="sortButton" onclick="bubbleSort();" disabled>Sort These Numbers</button>
-      	</div>
+					<div class="col-sm-1">
+						<label for="num10"></label>
+						<input type="number" class="form-control" id="num10" name="inputNumber">
+					</div>
+				</div> <!-- end .row -->
+				<br><br>
+				<div>
+					<button class="button" type="button" id="sortButton" onclick="bubbleSort();" disabled>Sort These Numbers</button>
+				</div>
 				<br><br>
 				<div class="row">
 					<h4>Sort Results:</h4>
@@ -89,15 +90,15 @@
 				<!-- Can make this prettier in the future. -->
 				<div id="showSortResults"></div>
 
-      </div> <!-- end .jumbotron-->
+			</div> <!-- end .jumbotron-->
 		</div> <!-- end .container -->
 
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
 
 	</body>
 </html>
