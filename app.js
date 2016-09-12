@@ -19,32 +19,32 @@ function buttonEnable() {
 // Grab user input, push into array, bubbleSort the array, and print resulting sorted array
 // Refactor with helper function if time allows...
 function bubbleSort() {
-	var numbersArray =[];
-	var inputElements = document.getElementsByName("inputNumber");
-	//console.log(inputElements);
-	
-	for (i in inputElements) {
-		var singleNumber = inputElements[i].value;
-		//console.log(singleNumber);
-		if (singleNumber !== "" && singleNumber !== undefined && singleNumber !== NaN) {
-			numbersArray.push(parseFloat(singleNumber));
-			//console.log(numbersArray);
-		}
-	}
+  var numbersArray =[];
+  var inputElements = document.getElementsByName("inputNumber");
+  //console.log(inputElements);
+  
+  for (i in inputElements) {
+    var singleNumber = inputElements[i].value;
+    //console.log(singleNumber);
+    if (singleNumber !== "" && singleNumber !== undefined && singleNumber !== NaN) {
+      numbersArray.push(parseFloat(singleNumber));
+      //console.log(numbersArray);
+    }
+  }
 
-	var length = numbersArray.length;
+  var length = numbersArray.length;
 
-	for (var i = 0; i < length; i++) {
-		for (var j = 0; j < (length - i - 1); j++) { // j < (length - i)
-			if (numbersArray[j] > numbersArray[j+1]) { // compare adjacent nums
-				var temp = numbersArray[j]; // temp variable for current num
-				numbersArray[j] = numbersArray[j+1]; // replace current num with adjacent num
-				numbersArray[j+1] = temp; // replace adjacent num with current num
-			}
-		}
-	}
+  for (var i = 0; i < length; i++) {
+    for (var j = 0; j < (length - i - 1); j++) { // j < (length - i)
+      if (numbersArray[j] > numbersArray[j+1]) { // compare adjacent nums
+        var temp = numbersArray[j]; // temp variable for current num
+        numbersArray[j] = numbersArray[j+1]; // replace current num with adjacent num
+        numbersArray[j+1] = temp; // replace adjacent num with current num
+      }
+    }
+  }
 
-	var sortResults = document.getElementById("showSortResults");
-	sortResults.innerHTML = numbersArray
+  var sortResults = document.getElementById("showSortResults");
+  sortResults.innerHTML = numbersArray
 }
 
